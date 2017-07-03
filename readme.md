@@ -12,9 +12,7 @@
 Example of how to display multi-threaded job status with windows forms.
 
 Looks like...
-![alt text](https://raw.githubusercontent.com/dshifflet/JobStatus/master/imgs/Capture.png "Example Screen Shot")
-
-
+![alt text](https://raw.githubusercontent.com/dshifflet/JobStatus/master/imgs/capture1.PNG "Example Screen Shot")
 
 Each job supports the following events...
 ```
