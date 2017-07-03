@@ -14,6 +14,8 @@ Example of how to display multi-threaded job status with windows forms.
 Looks like...
 ![alt text](https://raw.githubusercontent.com/dshifflet/JobStatus/master/imgs/Capture.png "Example Screen Shot")
 
+
+
 Each job supports the following events...
 ```
         public delegate void JobCompletedHandler(string name, string msg); //Starts it ADDS IT TO THE GRID VIEW
