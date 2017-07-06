@@ -16,11 +16,11 @@ Looks like...
 
 Each job supports the following events...
 ```
-		public delegate void JobStartedHandler(string name, string msg); //Starts it ADDS IT TO THE GRID VIEW
-        public delegate void JobProgressHandler(string name, string msg, int percent); //Moves the progress box
-        public delegate void JobOverallStatusHandler(string msg); //Updates the Task Bar		
-        public delegate void JobCompletedHandler(string name, string msg); //Flags as Completed (GREEN)
-        public delegate void JobFailedHandler(string name, string msg); //Flags as Failed (RED)       
-        public delegate void JobOverallCompletedHandler(string msg); //Displays a message Box
+public delegate void JobStartedHandler(string name, string msg); //Starts it ADDS IT TO THE GRID VIEW
+public delegate void JobProgressHandler(string name, string msg, int percent); //Moves the progress box
+public delegate void JobOverallStatusHandler(string msg); //Updates the Task Bar		
+public delegate void JobCompletedHandler(string name, string msg); //Flags as Completed (GREEN)
+public delegate void JobFailedHandler(string name, string msg); //Flags as Failed (RED)       
+public delegate void JobOverallCompletedHandler(string msg); //Displays a message Box
 ```
 Project includes a simple sample so you can see how to wire things up.
