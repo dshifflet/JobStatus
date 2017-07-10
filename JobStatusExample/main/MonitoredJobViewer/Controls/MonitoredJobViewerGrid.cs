@@ -1,5 +1,4 @@
 ﻿using System.Drawing;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MonitoredJobs;
 
@@ -23,10 +22,7 @@ namespace MonitoredJobViewer.Controls
             job.JobProgressed += job_JobProgressed;
             job.JobOverallStatusUpdated += job_JobOverallStatusUpdated;
             job.JobOverallCompleted += job_JobOverallCompleted;
-            Task.Run(() =>
-            {
-                job.Start();
-            });
+            job.Start();
         }
 
         private void job_JobOverallCompleted(string msg)
@@ -70,7 +66,7 @@ namespace MonitoredJobViewer.Controls
 
         private void job_JobStarted(string name, string msg)
         {
-            var obj = new object[] { name, "Stared", msg, 0 };
+            var obj = new object[] { name, "Started", msg, 0 };
             dataGridView1.Rows.Add(obj);
         }
 
